@@ -40,3 +40,19 @@ DB_PASSWORD=123456
 DB_NAME=agent_db
 DB_HOST=localhost
 DB_PORT=5432
+
+2. 完整安装依赖命令
+# 1. 清理旧虚拟环境（环境异常时执行，可选）
+rm -rf .venv
+
+# 2. 安装项目全部开发依赖
+uv sync --extra dev
+
+# 若缺失异步数据库驱动，单独补充安装
+uv add asyncpg "sqlalchemy[asyncio]"
+
+3. 构建镜像并后台启动全部服务
+docker compose up -d --build
+
+
+
