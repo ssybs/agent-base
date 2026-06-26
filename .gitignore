@@ -1,0 +1,38 @@
+# 虚拟环境
+.venv/
+venv/
+
+# 缓存文件
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.uv/
+uv.lock
+
+# 日志
+logs/
+
+# 环境密钥
+.env
+.env.local
+.env.dev
+
+# docker缓存
+.dockerignore
+
+# IDE配置
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+.test_day1.py
+.test_day3.py
+.test_day4.py
+.test_day5.py
+.test_day6.py

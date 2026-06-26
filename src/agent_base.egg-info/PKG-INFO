@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: agent-base
+Version: 0.1.0
+Requires-Python: >=3.14
+Requires-Dist: fastapi>=0.104.1
+Requires-Dist: uvicorn[standard]>=0.24.0
+Requires-Dist: pydantic>=2.4.2
+Requires-Dist: pydantic-settings>=2.1.0
+Requires-Dist: sqlalchemy[asyncio]>=2.0.23
+Requires-Dist: psycopg2-binary>=2.9.9
+Requires-Dist: loguru>=0.7.2
+Requires-Dist: httpx>=0.25.2
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: tiktoken>=0.5.2
+Requires-Dist: asyncpg>=0.31.0
+Provides-Extra: dev
+Requires-Dist: ruff>=0.1.6; extra == "dev"
